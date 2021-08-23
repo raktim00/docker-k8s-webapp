@@ -1,0 +1,52 @@
+button {
+    background-color: rgb(48, 48, 211);
+    color: rgb(239, 237, 243);
+    border: none;
+    padding: 10px 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 90vh;
+    /* height: 100%; Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #op {
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin: auto;
+    height: 90%;
+    background-color: white;
+    font-size: 12px;
+    overflow: scroll;
+    border-radius: 10px;
+    text-align: left;
+    word-wrap: inherit;
+}

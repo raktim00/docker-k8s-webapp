@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/function.js"></script>
+    <script src="js/listCon.js"></script>
+    <script src="js/runCon.js"></script>
+    <script src="js/runCont.js"></script>
+    <script src="js/stopCont.js"></script>
+    <script src="js/launchCont.js"></script>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Document</title>
+</head>
+
+    <body>
+        <h2 style="text-align: center;">Two Equal Columns</h2>
+    
+    
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <p>
+            <div>
+                <button onclick="listCon()" >List Container</button>
+            </div></p>
+        <p><div>
+            <button onclick="myFunction()" >Launch Container</button>
+
+            <div id="remove" style="display:none;">
+                <input type="text" placeholder="Container Name" id="conName">
+                <input type="text" placeholder="Image Name" id="imgName">
+                <button onclick="launchCont()">Submit</button>
+            </div>
+
+        </div></p>
+
+        <p><div>
+            <button onclick="myFunction1()" >Run Container</button>
+
+            <div id="remove1" style="display:none;">
+                <input type="text" placeholder="Container Name" id="runConName" >
+                <button onclick="runCont()">Submit</button>
+            </div>
+
+        </div></p>
+        <p><div>
+          <button onclick="myFunction2()" >Stop Container</button>
+
+          <div id="remove2" style="display:none;">
+              <input type="text" placeholder="Container Name" id="stopConName" >
+              <button onclick="stopCont()">Submit</button>
+          </div>
+
+      </div></p>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2 style="text-align: center;">OutPut</h2>
+        <div id="op">
+        </div>
+      </div>
+    </div>
+    
+    </body>
+</html>

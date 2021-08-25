@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"
+    />
     <script src="js/function.js"></script>
     <script src="js/listCon.js"></script>
     <script src="js/runCon.js"></script>
@@ -10,56 +15,62 @@
     <script src="js/stopCont.js"></script>
     <script src="js/launchCont.js"></script>
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World Document</title>
-</head>
+  </head>
 
-    <body>
-        <h2 style="text-align: center;">Two Equal Columns</h2>
-    
-    
-    <div class="row">
-      <div class="column" style="background-color:#aaa;">
-        <p>
-            <div>
-                <button onclick="listCon()" >List Container</button>
-            </div></p>
-        <p><div>
-            <button onclick="myFunction()" >Launch Container</button>
-
-            <div id="remove" style="display:none;">
-                <input type="text" placeholder="Container Name" id="conName">
-                <input type="text" placeholder="Image Name" id="imgName">
-                <button onclick="launchCont()">Submit</button>
-            </div>
-
-        </div></p>
-
-        <p><div>
-            <button onclick="myFunction1()" >Run Container</button>
-
-            <div id="remove1" style="display:none;">
-                <input type="text" placeholder="Container Name" id="runConName" >
-                <button onclick="runCont()">Submit</button>
-            </div>
-
-        </div></p>
-        <p><div>
-          <button onclick="myFunction2()" >Stop Container</button>
-
-          <div id="remove2" style="display:none;">
-              <input type="text" placeholder="Container Name" id="stopConName" >
-              <button onclick="stopCont()">Submit</button>
-          </div>
-
-      </div></p>
-      </div>
-      <div class="column" style="background-color:#bbb;">
-        <h2 style="text-align: center;">OutPut</h2>
-        <div id="op">
+  <body>
+    <div id="div1">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="docker-icon.png" height="50px" width="80px" alt="" />
         </div>
+        <div class="col-md-7"><h4>Docker Web App</h4></div>
       </div>
     </div>
-    
-    </body>
+
+    <div class="rows">
+      <div class="column" style="background-color: #2496ed">
+        <div id="list">
+          <div id="option">
+            <button id="opbtn" onclick="listCon()">List Container</button>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="myFunction()">Launch Container</button>
+
+            <div id="remove" style="display: none">
+              <input type="text" placeholder="Container Name" id="conName" />
+              <input type="text" placeholder="Image Name" id="imgName" />
+              <button id="submit" onclick="launchCont()">Submit</button>
+            </div>
+          </div>
+
+          <div id="option">
+            <button id="opbtn" onclick="myFunction1()">Run Container</button>
+
+            <div id="remove1" style="display: none">
+              <input type="text" placeholder="Container Name" id="runConName" />
+              <button id="submit" onclick="runCont()">Submit</button>
+            </div>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="myFunction2()">Stop Container</button>
+
+            <div id="remove2" style="display: none">
+              <input
+                type="text"
+                placeholder="Container Name"
+                id="stopConName"
+              />
+              <button id="submit" onclick="stopCont()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column" style="background-color: #2496ed">
+        <h2 id="out">OUTPUT</h2>
+        <div id="op"></div>
+      </div>
+    </div>
+  </body>
 </html>

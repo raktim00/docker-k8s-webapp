@@ -40,7 +40,7 @@
   font-weight: bold;
   color: #fff;
   color: rgb(255, 255, 255);
-  height: 41px;
+  height: 40px;
   width: 110px;
   margin-left: 15px;
   color: rgb(255, 255, 255);
@@ -55,7 +55,7 @@ input[type="text"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 41px;
+  height: 40px;
   font-size: 12px;
   margin-left: 15px;
 }
@@ -68,7 +68,7 @@ input[type="number"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 45px;
+  height: 40px;
   font-size: 12px;
   margin-left: 15px;
 }

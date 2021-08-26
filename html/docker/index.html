@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+  <script src="js/execCont.js"></script>
+  <script src="js/launchCont.js"></script>
+  <script src="js/listCont.js"></script>
+  <script src="js/listImg.js"></script>
+  <script src="js/removeCont.js"></script>
+  <script src="js/startCont.js"></script>
+  <script src="js/stopCont.js"></script>
+  <script src="js/toggle.js"></script>
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World Document</title>
+</head>
+
+<body>
+  <div id="div1">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="docker-icon.png" height="50px" width="80px" alt="" />
+      </div>
+      <div class="col-md-7">
+        <h4>Docker Web App</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="rows">
+    <div class="column" style="background-color: #2496ed">
+      <h2 id="out">OPTIONS</h2>
+      <div id="list">
+        <div id="option">
+          <button id="opbtn" onclick="listCont()">List Container</button>
+        </div>
+        <div id="option">
+          <button id="opbtn" onclick="listImg()">List Images</button>
+        </div>
+        <div id="option">
+          <button id="opbtn" onclick="toggleLaunchCont()">
+            Launch Container
+          </button>
+
+          <div id="remove" style="display: none">
+            <input type="text" placeholder="Container Name" id="launchContName" />
+            <input type="text" placeholder="Image Name" id="launchImgName" />
+            <button id="submit" onclick="launchCont()">Submit</button>
+          </div>
+        </div>
+
+        <div id="option">
+          <button id="opbtn" onclick="toggleStartCont()">
+            Start Container
+          </button>
+
+          <div id="remove1" style="display: none">
+            <input type="text" placeholder="Container Name" id="startContName" />
+            <button id="submit" onclick="startCont()">Submit</button>
+          </div>
+        </div>
+        <div id="option">
+          <button id="opbtn" onclick="toggleStopCont()">
+            Stop Container
+          </button>
+
+          <div id="remove2" style="display: none">
+            <input type="text" placeholder="Container Name" id="stopContName" />
+            <button id="submit" onclick="stopCont()">Submit</button>
+          </div>
+        </div>
+        <div id="option">
+          <button id="opbtn" onclick="toggleRemoveCont()">
+            Remove Container
+          </button>
+
+          <div id="remove3" style="display: none">
+            <input type="text" placeholder="Container Name" id="removeContName" />
+            <button id="submit" onclick="removeCont()">Submit</button>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="toggleExecCont()">
+              Execute Container
+            </button>
+
+            <div id="remove4" style="display: none">
+              <input type="text" placeholder="Container Name" id="executeContName" />
+              <input type="text" placeholder="Command" id="cmd" />
+              <button id="submit" onclick="execCont()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column" style="background-color: #2496ed">
+      <h2 id="out">OUTPUT</h2>
+      <div id="op"></div>
+    </div>
+  </div>
+</body>
+
+</html>

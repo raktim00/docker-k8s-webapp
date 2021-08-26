@@ -1,1 +1,164 @@
-Test K8s
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <script src="js/createDeploy.js"></script>
+    <script src="js/createPod.js"></script>
+    <script src="js/deleteDeploy.js"></script>
+    <script src="js/deletePod.js"></script>
+    <script src="js/exposeDeploy.js"></script>
+    <script src="js/deleteService.js"></script>
+    <script src="js/listDeploy.js"></script>
+    <script src="js/listPod.js"></script>
+    <script src="js/listService.js"></script>
+    <script src="js/scaleDeploy.js"></script>
+    <script src="js/toggle.js"></script>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World Document</title>
+  </head>
+
+  <body>
+    <div id="div1">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="docker-icon.png" height="50px" width="80px" alt="" />
+        </div>
+        <div class="col-md-7">
+          <h4>K8s Web App</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="rows">
+      <div class="column" style="background-color: #2496ed">
+        <h2 id="out">OPTIONS</h2>
+        <div id="list">
+          <div id="option">
+            <button id="opbtn" onclick="listPod()">List Pods</button>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="toggleCreatePod()">Create Pod</button>
+
+            <div id="remove" style="display: none">
+              <input type="text" placeholder="Pod Name" id="createPodName" />
+              <input
+                type="text"
+                placeholder="Image Name"
+                id="createPodImgName"
+              />
+              <button id="submit" onclick="createPod()">Submit</button>
+            </div>
+          </div>
+
+          <div id="option">
+            <button id="opbtn" onclick="toggleDeletePod()">Delete Pod</button>
+
+            <div id="remove1" style="display: none">
+              <input type="text" placeholder="Pod Name" id="deletePodName" />
+              <button id="submit" onclick="deletePod()">Submit</button>
+            </div>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="listDeploy()">List Deploy</button>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="toggleCreateDeploy()">
+              Create Deploy
+            </button>
+
+            <div id="remove2" style="display: none">
+              <input
+                type="text"
+                placeholder="Deployment Name"
+                id="createDeployName"
+              />
+              <input
+                type="text"
+                placeholder="Image Name"
+                id="createDeployImgName"
+              />
+              <button id="submit" onclick="createDeploy()">Submit</button>
+            </div>
+          </div>
+
+          <div id="option">
+            <button id="opbtn" onclick="toggleDeleteDeploy()">
+              Delete Deploy
+            </button>
+
+            <div id="remove3" style="display: none">
+              <input
+                type="text"
+                placeholder="Deployment Name"
+                id="deleteDeployName"
+              />
+              <button id="submit" onclick="deleteDeploy()">Submit</button>
+            </div>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="toggleScaleDeploy()">
+              Scale Deploy
+            </button>
+
+            <div id="remove4" style="display: none">
+              <input
+                type="text"
+                placeholder="Deployment Name"
+                id="scaleDeployName"
+              />
+              <input
+                type="number"
+                placeholder="Number of Replicas"
+                id="replicaCount"
+              />
+              <button id="submit" onclick="scaleDeploy()">Submit</button>
+            </div>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="toggleExposeDeploy()">
+              Expose Deploy
+            </button>
+
+            <div id="remove5" style="display: none">
+              <input
+                type="text"
+                placeholder="Deployment Name"
+                id="exposeDeployName"
+              />
+              <input type="number" placeholder="Port Number" id="portNumber" />
+              <button id="submit" onclick="exposeDeploy()">Submit</button>
+            </div>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="listService()">List Services</button>
+          </div>
+          <div id="option">
+            <button id="opbtn" onclick="toggleDeleteService()">
+              Delete Service
+            </button>
+
+            <div id="remove6" style="display: none">
+              <input
+                type="text"
+                placeholder="Service Name"
+                id="deleteServiceName"
+              />
+              <button id="submit" onclick="deleteService()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column" style="background-color: #2496ed">
+        <h2 id="out">OUTPUT</h2>
+        <div id="op"></div>
+      </div>
+    </div>
+  </body>
+</html>

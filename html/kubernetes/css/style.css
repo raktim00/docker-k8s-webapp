@@ -27,7 +27,7 @@
   font-weight: bold;
   color: #fff;
   padding: 10px 12px;
-  height: 50px;
+  height: 41px;
   width: 160px;
   margin-left: 30px;
   border-radius: 10px;
@@ -40,7 +40,7 @@
   font-weight: bold;
   color: #fff;
   color: rgb(255, 255, 255);
-  height: 50px;
+  height: 41px;
   width: 110px;
   margin-left: 15px;
   color: rgb(255, 255, 255);
@@ -55,10 +55,24 @@ input[type="text"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 50px;
+  height: 41px;
   font-size: 12px;
   margin-left: 15px;
 }
+
+input[type="number"] {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #003f8c;
+  font-weight: bold;
+  height: 45px;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
 
 /* Create two equal columns that floats next to each other */
 .column {

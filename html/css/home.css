@@ -1,0 +1,228 @@
+.mainPage {
+  background-size: cover;
+  height: 721px;
+  text-align: center;
+  background-color: #2496ed;
+}
+
+.main {
+  height: 110px;
+}
+
+.mainPage .main .navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.main .navbar-header .navbar-brand {
+  color: rgb(2, 33, 67);
+  /* color: rgb(17, 94, 155); */
+  padding-top: 25px;
+  padding-left: 100px;
+  font-size: 2.2em;
+  font-weight: 600;
+  font-family: "Patua One", cursive;
+  /* font-family: 'Caveat', cursive; */
+}
+
+.main .navbar-right {
+  padding: 12px;
+  padding-right: 70px;
+}
+
+.main .navbar-inverse .navbar-right > li > a {
+  color: rgb(2, 33, 67);
+  /* margin: 2px; */
+  font-family: "Roboto Slab", serif;
+  font-weight: 550;
+  font-size: 23px;
+}
+
+.main .navbar-inverse .navbar-right > li > a:hover {
+  color: white;
+}
+
+.head {
+  padding: 50px;
+}
+
+.head h1 {
+  color: rgb(23, 30, 73);
+  font-family: "Heebo", sans-serif;
+  font-size: 40px;
+  padding-right: 50px;
+}
+
+.head p {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  color: rgb(23, 63, 95);
+  padding-right: 50px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.head p > i {
+  padding-right: 5px;
+}
+
+.head button {
+  background-color: rgb(23, 63, 95);
+  padding: 7px 30px;
+  margin-right: 50px;
+  border: none;
+}
+
+.head button:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.08);
+  /* background-color: rgb(32, 160, 177); */
+  /* background-color: rgb(16, 151, 144);
+  background-color: rgb(7, 123, 121);*/
+}
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 95%;
+  width: 50%;
+  margin-top: 5%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: black;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#text {
+  background-color: rgb(45, 158, 60);
+  border-color: #043602;
+}
+
+#para {
+  font-size: 18px;
+}
+
+.btn1 {
+  width: 180px;
+  height: 55px;
+  background-color: rgb(2, 33, 67);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn1:hover {
+  background-color: white;
+  color: rgb(2, 33, 67);
+}
+
+#img1 {
+  /* margin-bottom: px; */
+  width: 180px;
+}
+
+#img2 {
+  margin-top: 5px;
+}
+
+.proc {
+  height: 700px;
+  background-color: white;
+  text-align: center;
+}
+
+/* .proc h4 {
+  padding: 0;
+  margin: 0;
+  padding-top: 70px;
+  color: rgb(7, 123, 121);
+} */
+
+.proc h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 70px;
+  font-size: 60px;
+  color: rgb(2, 33, 67);
+  font-family: "Playfair Display", serif;
+}
+
+.steps {
+  margin-top: 70px;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
+}
+
+.round {
+  /* border-radius: 50%; */
+  padding: 10px;
+  /* border: 1px solid; */
+  color: darkgray;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.round:hover {
+  transform: scale(1.13);
+}
+
+.steps h2 {
+  font-size: 27px;
+  font-family: "Newsreader", serif;
+}
+
+.steps h4 {
+  font-size: 18px;
+  font-family: "Newsreader", serif;
+}
+
+.steps p {
+  padding: 15px 20px;
+  font-size: 17px;
+}
+
+.steps a:hover {
+  text-decoration: none;
+}
+
+.footer2 {
+  height: 50px;
+  background-color: rgb(26, 26, 26);
+}
+
+.footer2 p {
+  color: darkgray;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer2 span {
+  color: white;
+}

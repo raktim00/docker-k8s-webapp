@@ -3,20 +3,20 @@
   height: 110px;
   width: 1536px;
   background-color: rgb(2, 33, 68);
-  color: rgb(36, 150, 237);
+  color: rgb(46, 108, 230);
   font-size: 30px;
 }
 
 #div1 h4 {
   font-size: 40px;
   margin-right: 550px;
-  padding-top: 20px;
+  padding-top: 23px;
   font-weight: 600;
 }
 
 #div1 img {
-  margin-left: 550px;
-  margin-top: 25px;
+  margin-left: 580px;
+  margin-top: 23px;
 }
 
 #opbtn {
@@ -24,10 +24,10 @@
   border-color: rgb(1, 13, 63);
   color: rgb(255, 255, 255);
   font-family: Poppins, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   padding: 10px 12px;
-  height: 41px;
+  height: 37px;
   width: 160px;
   margin-left: 30px;
   border-radius: 10px;
@@ -40,7 +40,7 @@
   font-weight: bold;
   color: #fff;
   color: rgb(255, 255, 255);
-  height: 40px;
+  height: 34px;
   width: 110px;
   margin-left: 15px;
   color: rgb(255, 255, 255);
@@ -55,7 +55,7 @@ input[type="text"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 40px;
+  height: 35px;
   font-size: 12px;
   margin-left: 15px;
 }
@@ -68,11 +68,10 @@ input[type="number"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 40px;
+  height: 35px;
   font-size: 12px;
   margin-left: 15px;
 }
-
 
 /* Create two equal columns that floats next to each other */
 .column {
@@ -96,19 +95,23 @@ input[type="number"] {
 #op {
   border: 2px solid white;
   padding: 10px 20px;
+  margin-top: 10px;
   margin: auto;
   margin-right: 15px;
-  height: 87%;
+  height: 83%;
   background-color: white;
+  font-family: Poppins, sans-serif;
   font-size: 12px;
   overflow: scroll;
   border-radius: 10px;
   text-align: left;
   word-wrap: inherit;
+  font-weight: bold;
 }
 
 #list {
   margin-left: 15px;
+  margin-top: 8px;
 }
 
 #out {
@@ -116,6 +119,7 @@ input[type="number"] {
   font-family: Poppins, sans-serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
+  margin-top: 10px;
 }
 
 #option {

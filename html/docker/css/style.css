@@ -84,13 +84,14 @@ input[type="text"] {
   padding: 10px 20px;
   margin: auto;
   margin-right: 15px;
-  height: 87%;
+  height: 83%;
   background-color: white;
   font-size: 12px;
   overflow: scroll;
   border-radius: 10px;
   text-align: left;
   word-wrap: inherit;
+  font-weight: bold;
 }
 
 #list {

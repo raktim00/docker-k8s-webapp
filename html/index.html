@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Web</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css"
+      integrity="sha512-5m1+8f8jC4ePfYvS39HmjqsYkkragJZaXV7kfreb5pytmTlDnZgXZ73JlYC0Ui25beVJMWLJq8AzDv4ZeXC9mg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@700&family=Domine&family=Libre+Baskerville:wght@700&family=Heebo:wght@500&family=Merriweather+Sans:ital@1&family=Newsreader:wght@700&family=Oswald:wght@500&family=Patua+One&family=PT+Serif:ital@1&family=Playfair+Display:wght@500&family=Roboto+Slab:wght700&family=Source+Sans+Pro:ital@1&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/9f1277f83e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div
+      class="mainPage"
+      id="main"
+      data-parallax="scroll"
+      data-image-src="images/bg.webp"
+    >
+      <!-- Navbar Starts  -->
+      <div class="main">
+        <nav class="navbar navbar-default navbar-inverse" id="nav">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"
+                ><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Container
+                <span>Web</span></a
+              >
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="docker/docker.html"> Docker</a></li>
+                <li><a href="kubernetes/k8s.html"> Kubernetes</a></li>
+                <li><a href="#team"> Team</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+      <!-- Navbar End  -->
+
+
+      <div class="row col-md-6" style="margin-top: 250px; margin-left: 10px; color:black">
+          <div class="centered">
+            <img id="img1" src="docker-home.png"  alt="Docker">
+            <h1>
+                <strong>A web based interface for Docker.</strong>
+                  </h1>
+                  <p id="para">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <strong> Fast, consistent delivery</strong>
+                  </p id="para">
+                  <p id="para">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <strong> Responsive deployment and scaling</strong>
+                  </p>
+                  <p id="para">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <strong> Running workloads on same hardware</strong>
+                  </p>
+                  <button class="btn1" onclick="location.href = 'docker/docker.html'">Docker Web App</button>
+          </div>
+        </div>
+
+        <div class="row col-md-6" style="margin-top: 250px; margin-right: 10px; color:black">
+          <div class="centered">
+            <img id="img2" src="kubernetes-home.png" alt="Kubernetes">
+            <h1>
+                <strong>A web based interface for Kubernetes.</strong>
+                  </h1>
+                  <p id="para">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <strong> Automated rollouts and rollbacks</strong>
+                  </p>
+                  <p id="para">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <strong> Service discovery and load balancing</strong>
+                  </p>
+                  <p id="para">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <strong> Scale your application up and down</strong>
+                  </p>
+                  <button class="btn1" onclick="location.href = 'kubernetes/k8s.html'">K8s Web App</button>
+          </div>
+        </div>
+    </div>
+
+
+
+<!-- Our Team -->
+    <div class="proc" id="team">
+      <h1>Our Team</h1>
+      <div class="row steps">
+        <div class="col-md-6">
+          <img src="aditya.jpg" alt="" height="200px" width="200px" class="img-circle round">
+          <h2>Aditya Raj</h2>
+          <h4>Computer Science and Engineering Student </h4>
+          <h4 style="margin-top: 26px;"><a href="https://www.linkedin.com/in/raj-aditya/"><i class="fab fa-linkedin-in"></i></a>&nbsp&nbsp<a href="https://github.com/adyraj"><i class="fab fa-github"></i></a>&nbsp&nbsp<a href="https://adyraj.medium.com/"><i class="fab fa-medium"></i></a>&nbsp&nbsp<a href="adyraj02@gmail.com"><i class="fab fa-google-plus-g"></i></a></h4>
+        </div>
+
+        <div class="col-md-6">
+          <img src="raktim.jpg" alt="" height="200px" width="200px" class="img-circle round">
+          <h2>Raktim Midya</h2>
+          <h4>Computer Science and Engineering Student</h4>
+          <h4 style="margin-top: 26px;"><a href="https://www.linkedin.com/in/raktimmidya"><i class="fab fa-linkedin-in"></i></a>&nbsp&nbsp<a href="https://github.com/raktim00"><i class="fab fa-github"></i></a>&nbsp&nbsp<a href="https://raktimmidya.medium.com/"><i class="fab fa-medium"></i></a>&nbsp&nbsp<a href="raktimmidya00@gmail.com"><i class="fab fa-google-plus-g"></i></a></h4>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team -->
+
+        <div class="footer2">
+      <p>&copy; 2021 Copyright: <span>Container Web</span></p>
+    </div>
+
+
+  </body>
+</html>

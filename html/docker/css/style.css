@@ -33,6 +33,11 @@
   border-radius: 10px;
 }
 
+#opbtn:hover {
+  background-color: white;
+  color: rgb(2, 33, 67);
+}
+
 #submit {
   background-color: rgb(45, 158, 60);
   border-color: #043602;

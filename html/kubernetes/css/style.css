@@ -27,10 +27,15 @@
   font-weight: 600;
   color: #fff;
   padding: 10px 12px;
-  height: 37px;
+  height: 40px;
   width: 160px;
   margin-left: 30px;
   border-radius: 10px;
+}
+
+#opbtn:hover {
+  background-color: white;
+  color: rgb(2, 33, 67);
 }
 
 #submit {
@@ -40,7 +45,7 @@
   font-weight: bold;
   color: #fff;
   color: rgb(255, 255, 255);
-  height: 34px;
+  height: 36px;
   width: 110px;
   margin-left: 15px;
   color: rgb(255, 255, 255);
@@ -55,7 +60,7 @@ input[type="text"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 35px;
+  height: 36px;
   font-size: 12px;
   margin-left: 15px;
 }
@@ -68,7 +73,7 @@ input[type="number"] {
   border-radius: 10px;
   border-color: #003f8c;
   font-weight: bold;
-  height: 35px;
+  height: 36px;
   font-size: 12px;
   margin-left: 15px;
 }
